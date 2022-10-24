@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/inputs.css">
+    <link rel="stylesheet" href="../../styles/Buttons.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Petinfo - Login</title>
 </head>
 <body>
-    <main></main>
-    <script type="module" src="index.js"></script>
+    <section class="margin">
+     <h2 class="logo">Petinfo</h2>  
+     <h2 class="titulo">
+        <span>Amor</span> e <span>carinho</span> por meio do conhecimento
+     </h2> 
+     <p class="text">Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+     <img src="../../assets/img-login.jpg" alt="">
+    </section>
+    <main>
+     <h1 class="marginBotton">Login</h1>
+     <form>
+        <h3>Email</h3>
+        <input id="email" type="text" placeholder="  Digite seu Email aqui">
+        <h3>Senha</h3>
+        <input id="password" type="text" placeholder="  Digite sua senha aqui">
+        <p id="alert" class="alert"></p>
+        <button class="btnCadastrar">Acessar</button>
+        <div class="alinha">
+        <h4>Ainda não possui conta?</h4>
+        <p class="frase marginBotton">Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+        </div>
+
+        <button class="btnPageLogin">Cadastrar</button>
+     </form>
+    </main>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

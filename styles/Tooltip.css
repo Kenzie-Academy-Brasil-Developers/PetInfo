@@ -1,0 +1,58 @@
+.tooltip {
+    position: relative;
+    top: 38px;
+    display: inline-block;
+
+  }
+  
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--gray900);
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 45px;
+    left: -80px;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  
+.containertooltip{
+    display: flex;
+    flex-direction: column;
+    height: 117px;
+    border-radius: 4px;
+    background-color: var(--gray900);
+    cursor: pointer;
+    }
+    
+    .containerDeslogar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .nometooltip{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    color:var(--gray100);
+    margin-bottom: 20px;
+    }
+    
+    .deslogar{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color:var(--gray100);
+    display: block;
+    }

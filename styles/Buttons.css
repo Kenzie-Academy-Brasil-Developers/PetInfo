@@ -1,0 +1,94 @@
+
+.btnCadastrar{
+    height: 38px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0px 16px;
+    background-color: var(--brand100);
+    color: var(--gray900);
+    border: solid 1px var(--gray600);
+    margin-bottom: 26px;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    }
+    
+    .btnPageLogin{
+    height: 38px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0px 16px;    
+    background-color: var(--gray600);
+    color: var(--gray100);
+    border: solid 1px var(--gray600);
+    font-family:" IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    }
+
+    
+.btnVoltarLogin{
+    height: 32px;
+    width: 133px;
+    border-radius: 4px;
+    padding: 0px 8px;
+    border: solid 1px var(--gray600);
+    background-color: var(--gray600);
+    color: var(--gray100);
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    
+    }
+
+    .btnCriar{
+        height: 38px;
+        width: 152px;
+        border-radius: 4px;
+        padding: 0px 16px;
+        background-color: #364FC7;
+        color: var(--gray900);
+        border: solid 1px #364FC7;
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        
+        }
+
+        
+.btnEdit{
+    height: 32px;
+    width: 55px;
+    border-radius: 4px;
+    padding: 0px 8px;
+    color: var(--gray100);
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    background-color:var(--gray600) ;
+    border: solid 1px var(--gray600);
+    }
+    
+    .btnExcluir{
+    height: 32px;
+    width: 60px;
+    border-radius: 4px;
+    padding: 0px 8px;
+    background-color:var(--gray700) ;
+    border: solid 1px var(--gray700);
+    color: var(--gray400);
+    font-family: " IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-left: 10px;
+    }
+    
+    
