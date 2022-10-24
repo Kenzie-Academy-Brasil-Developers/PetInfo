@@ -1,4 +1,4 @@
-import { Cadastro } from "../../scripts/api.js";
+import { login } from "../../scripts/ApiRequest.js"
 
 function eventForm() {
   const form = document.querySelector("form");
