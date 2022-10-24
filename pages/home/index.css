@@ -111,3 +111,7 @@ article{
 body{
     flex-direction: column;
 }
+
+.alinha{
+    align-items: start;
+}

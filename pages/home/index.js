@@ -88,6 +88,27 @@ async function template(arr){
      texto.innerText = arr.content
      abrirPost.innerText = "Acessar publicação"
 
+     abrirPost.addEventListener("click",(event)=>{
+      event.preventDefault()
+       
+   const telaPrincipalModal = document.querySelector("#postClicado")
+   telaPrincipalModal.classList.toggle("none")
+   telaPrincipalModal.classList.toggle("flex")
+   const imagePerf = document.querySelector("#imgPerfilModal")
+   const nomePerf = document.querySelector("#nomePoster")
+   const dataPost = document.querySelector("#dataPost")
+   const tituloPost = document.querySelector("#tituloPost")
+   const textoPost = document.querySelector("#textoPoster")
+
+   imagePerf.src = arr.user.avatar
+   nomePerf.innerText = arr.user.username
+   dataPost.innerText = `${DataAtualizada(meses)}`
+   tituloPost.innerText = arr.title
+   textoPost.innerText = arr.content
+
+
+     })
+
      
 
      btnDelete.addEventListener("click",(e)=>{

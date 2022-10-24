@@ -6,6 +6,7 @@ export function abrirFecharModalPost(){
     const fechou = document.querySelector("#fechando")
     const fechaModalExcluir = document.querySelector("#btnfecharModalExcluir")
     const btnCancelar = document.querySelector(".btnCancelar")
+    const btnFecharModal = document.querySelector("#fechandoOModal")
  
     btnAbrir.addEventListener("click",(event)=>{
        event.preventDefault()
@@ -59,6 +60,14 @@ export function abrirFecharModalPost(){
    fechaModalExcluir.addEventListener("click",(event)=>{
       event.preventDefault()
       const modal = document.querySelector("#modalExcluir")
+      modal.classList.toggle("none")
+      modal.classList.toggle("flex")
+
+   })
+
+   btnFecharModal.addEventListener("click",(event)=>{
+      event.preventDefault()
+      const modal = document.querySelector("#postClicado")
       modal.classList.toggle("none")
       modal.classList.toggle("flex")
 
