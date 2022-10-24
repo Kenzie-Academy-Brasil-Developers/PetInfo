@@ -1,0 +1,17 @@
+.alinhaTitulo{
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+
+.textOba{
+font-family: "IBM Plex Sans" ;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+margin-bottom: 24px; 
+color: var(--brand100); 
+}

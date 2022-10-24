@@ -1,1 +1,59 @@
-/* Desenvolva a estilização da sua página aqui */
+span{
+color: var(--brand100);
+font-family: "IBM Plex Sans";
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+
+}
+
+.titulo{
+    font-family: "IBM Plex Sans";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #212529;
+    margin-bottom: 24px;
+}
+
+.margin{
+    margin: 185px 40px;
+}
+
+.marginBotton{
+    margin-bottom: 26px;
+}
+
+h4{
+font-family:"IBM Plex Sans";
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+color: #212529;
+margin-bottom: 20px;
+}
+
+.frase{
+font-family:"IBM Plex Sans";
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+color: var(--gray300);
+}
+
+.alinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert{
+    color: var(--alert100);
+    position: relative;
+    bottom: 13px;
+}
+
+.border{
+    border: solid 1px var(--alert100);
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/Buttons.css" />
+    <link rel="stylesheet" href="../../styles/Modais.css" />
+    <link rel="stylesheet" href="../../styles/inputs.css" />
+    <link rel="stylesheet" href="../../styles/Tooltip.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Petinfo</title>
+  </head>
+  <body>
+    <main>
+      <div class="navBar">
+        <h2 class="logo">Petinfo</h2>
+        <div class="ContainerbtnCriar">
+          <button class="btnCriar">Criar publicação</button>
+          <div class="tooltip containertooltip">
+            <picture>
+              <img class="imgPerfi" src="" />
+            </picture>
+            <div class="tooltiptext">
+              <h2 class="nometooltip"></h2>
+              <div class="containerDeslogar">
+                <img
+                  style="margin: 0 15px 0 3px"
+                  src="../../assets/sign-out-alt.png"
+                  alt="deslogar"
+                />
+                <h2 class="deslogar">Sair da conta</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="textFeed">Feed</h2>
+      <div id="container"></div>
+    </main>
+    <section class="telaPrincipalModal none">
+      <article class="modalPost">
+        <div class="containerButton">
+          <h2 class="titleCriandoPost">Criando novo post</h2>
+          <button class="btnFechar">X</button>
+        </div>
+        <form id="form">
+          <h3 class="tituloDoPost">Título do post</h3>
+          <input
+            name="title"
+            type="text"
+            placeholder="  Digite o título aqui..."
+          />
+          <h3>Conteúdo do post</h3>
+          <textarea
+            name="content"
+            placeholder="  Desenvolva o conteúdo do post aqui..."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="containerButtonModal">
+            <button class="btnCancelar">Cancelar</button>
+            <button class="btnPublicar">Publicar</button>
+          </div>
+        </form>
+      </article>
+    </section>
+    <section id="modalEdicao" class="telaPrincipalModal none">
+      <article class="modalPost">
+        <div class="containerButton">
+          <h2 class="titleCriandoPost">Edição</h2>
+          <button id="fechar" class="btnFechar">X</button>
+        </div>
+        <form id="formEdit">
+          <h3 class="tituloDoPost">Título do post</h3>
+          <input
+            id="title"
+            name="title"
+            type="text"
+            placeholder="  Digite o título aqui..."
+            value=""
+          />
+          <h3>Conteúdo do post</h3>
+          <textarea
+            id="texto"
+            name="content"
+            placeholder="  Desenvolva o conteúdo do post aqui..."
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="containerButtonModal">
+            <button id="cancel" class="btnCancelar">Cancelar</button>
+            <button class="btnEditar">Salva Alterações</button>
+          </div>
+        </form>
+      </article>
+    </section>
+    <section id="modalExcluir" class="telaPrincipalModal none">
+      <article class="modalPost">
+        <div class="containerButton">
+          <h2 class="titleCriandoPost">Confirmação de exclusão</h2>
+          <button id="fechando" class="btnFechar">X</button>
+        </div>
+        <h2 class="tituloModalExcluir">
+          Tem certeza que deseja excluir este post?
+        </h2>
+        <p class="textoModalExcluir">
+          Essa ação não poderá ser desfeita, então pedimos que tenha cautela
+          antes de concluir
+        </p>
+        <div>
+          <button id="btnfecharModalExcluir" class="btnCancelar">
+            Cancelar
+          </button>
+          <button class="btnExcluirPost">Sim, excluir este post</button>
+        </div>
+      </article>
+    </section>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
