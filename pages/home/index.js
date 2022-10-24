@@ -123,6 +123,7 @@ async function template(arr){
          modal.classList.toggle("none")
          modal.classList.toggle("flex")
        await  DeletePost(btnDelete.id)
+      
          listar(tdsPosts) 
       })
       

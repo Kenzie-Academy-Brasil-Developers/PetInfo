@@ -1,0 +1,30 @@
+.toast-container {
+    font-family: var(--font-family-1);
+    position: fixed;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    color: var(--grey-1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px var(--box-shadow-color);
+    animation: toastIt 4500ms ease-in forwards;
+}
+
+@keyframes toastIt {
+    0%   {right: 110px; bottom:-150px}
+    25%  {right: 110px; bottom:10px}
+    50%  {right: 110px; bottom:10px}
+    100% {right: 110px; bottom:-150px}
+}
+
+.toast-container > img {
+    width: 441px;
+}
+
+.successToast {
+    border: 2px solid var(--sucess);
+    background-color: var(--sucess-bg);
+}

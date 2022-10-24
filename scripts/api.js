@@ -1,4 +1,5 @@
 import { listar } from "../pages/home/index.js";
+import { toast } from "./toast.js";
 
 const urlBase = "http://localhost:3333/";
 const header = " application/json";
@@ -105,6 +106,7 @@ export async function DeletePost(id) {
     .then((res)=> res.json())
     .then((res)=>{
        const tdsPosts = JSON.parse(localStorage.getItem("posts"));
+       toast("Sucesso!")
       listar(tdsPosts)
   })
   return apiRequest

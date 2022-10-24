@@ -12,7 +12,30 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    opacity: 50%;
     
+    }
+
+    .animation{
+        width: 35px ;
+        height: 35px;
+        border-radius: 50%;
+        border-color: black var(--gray900) black ;
+        animation: loading 2s infinite;
+        border-top-color: solid  black;
+        border: solid 3px;
+    }
+
+    .containerloading{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .opacity{
+        opacity: 100%;
     }
     
     .btnPageLogin{
