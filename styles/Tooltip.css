@@ -19,6 +19,8 @@
     z-index: 1;
     padding: 10px;
   }
+
+
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -39,6 +41,10 @@
         flex-direction: row;
         align-items: center;
         cursor: pointer;
+    }
+
+    .containerDeslogar:hover{
+      background-color: var(--gray700);
     }
     
     .nometooltip{
